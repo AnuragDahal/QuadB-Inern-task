@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HodlInfo Clone</title>
+    <link rel="stylesheet" href="styles-css.css">
+</head>
+<body>
+    <header>
+        <div class="logo">HODLINFO</div>
+        <div class="menu">
+            <select id="currency">
+                <option value="INR">INR</option>
+            </select>
+            <select id="crypto">
+                <option value="BTC">BTC</option>
+            </select>
+            <button id="buyBtn">BUY BTC</button>
+        </div>
+        <div class="timer">
+            <div id="countdown">60</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="best-price">
+            <h2>Best Price to Trade</h2>
+            <div id="average-price">₹ 0</div>
+            <div class="price-stats">
+                <div class="stat-item">
+                    <span id="percent-change-5m">0.1%</span>
+                    <span>5 Mins</span>
+                </div>
+                <div class="stat-item">
+                    <span id="percent-change-1h">0.96%</span>
+                    <span>1 Hour</span>
+                </div>
+                <div class="stat-item highlight">
+                    <span id="saving-amount">₹ 0</span>
+                    <span>Average BTC/INR net price including commission</span>
+                </div>
+                <div class="stat-item">
+                    <span id="percent-change-1d">2.73%</span>
+                    <span>1 Day</span>
+                </div>
+                <div class="stat-item">
+                    <span id="percent-change-7d">7.51%</span>
+                    <span>7 Days</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="crypto-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Platform</th>
+                        <th>Last Traded Price</th>
+                        <th>Buy / Sell Price</th>
+                        <th>Difference</th>
+                        <th>Savings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script-js.js"></script>
+</body>
+</html>

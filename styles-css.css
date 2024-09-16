@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191d28;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #191d28;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3dc6c1;
+}
+
+.menu {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+select, button {
+    background-color: #2e3241;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#buyBtn {
+    background-color: #3dc6c1;
+    color: #ffffff;
+}
+
+.timer {
+    background-color: #3dc6c1;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.best-price {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#average-price {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.price-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight {
+    color: #3dc6c1;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #2e3241;
+}
+
+th {
+    background-color: #2e3241;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 1rem;
+    }
+
+    .timer {
+        margin-top: 1rem;
+    }
+
+    #average-price {
+        font-size: 2rem;
+    }
+
+    .price-stats {
+        flex-direction: column;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #average-price {
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        padding: 0.25rem;
+    }
+}
